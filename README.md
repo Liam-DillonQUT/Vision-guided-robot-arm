@@ -1,4 +1,4 @@
-# Vision-Guided Robotic Arm Simulation
+﻿# Vision-Guided Robotic Arm Simulation
 
 ![Demo](assets/demo.gif)
 
@@ -26,17 +26,15 @@ This project simulates a 7-DOF Kuka robotic arm that uses an overhead camera and
 2. OpenCV detects coloured spheres using HSV colour masking
 3. Pixel coordinates are converted to 3D world coordinates
 4. Inverse kinematics calculates joint angles to reach each target
-5. The arm moves through a state machine: DETECT → HOVER → DESCEND → GRAB → LIFT → PLACE → RELEASE
+5. The arm moves through a state machine: DETECT > HOVER > DESCEND > GRAB > LIFT > PLACE > RELEASE
 
 ## Setup
-```bash
 git clone https://github.com/Liam-DillonQUT/Vision-guided-robot-arm.git
 cd Vision-guided-robot-arm
 python -m venv venv
 venv\Scripts\Activate.ps1
 pip install pybullet opencv-python numpy
 python Robot_arm.py
-```
 
 ## Background
 Built as a portfolio project to demonstrate robotics software skills alongside a Mechatronics Engineering degree.
